@@ -3,6 +3,7 @@ module ActsAsTaggableOn
     include ActsAsTaggableOn::Utils
 
     attr_accessible :name if defined?(ActiveModel::MassAssignmentSecurity)
+    attr_accessible :description if defined?(ActiveModel::MassAssignmentSecurity)
 
     ### ASSOCIATIONS:
 
